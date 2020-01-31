@@ -466,8 +466,32 @@
                 </div>
                 <div class="row">
                     <div class="col-xs-12 col-sm-12 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2 box-contact-form">
-
-                        <form id="contact-form" method="post" action="nihad.biber90@gmail.com">
+                        <div class="socials">
+                            <p class="text-center" style="font-size: 26px;">
+                                E-mail me to contact me or use my social networks.
+                            </h1>
+                            <h2 class="text-center">
+                                Email: nihad.biber90@gmail.com
+                            </h2>
+                            <h2 class="text-center">
+                                Social Networks: <a href="https://www.facebook.com/bibke90" target="_blank"> <i class="fa fa-facebook"></i></a> 
+                                    <a href="https://www.linkedin.com/in/nihad-biberovi%C4%87-26258119a/" target="_blank">
+                                        <i class="fa fa-linkedin"></i>
+                                    </a> 
+                                    <a href="https://github.com/nihad-bibke" target="_blank">
+                                      <i class="fa fa-github" aria-hidden="true"></i>
+                                    </a> 
+                                    <a href="https://www.upwork.com/freelancers/~014f5fa8e05031ddaa" target="_blank">
+                                      <i class="fa" aria-hidden="true">
+                                          <img src="img/200x200.png" alt="" style="margin: 0;">
+                                      </i>
+                                    </a>
+                                </div>
+                            </h2>
+                        </div>
+                        
+                        <!--
+                            <form id="contactform" name="contact_form" role="form" name="contact_form" action="mailto:nihad.biber90@gmail.com" method="get" enctype="text/plain">
 
                             <div class="messages"></div> 
 
@@ -476,13 +500,13 @@
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <input id="form_name" type="text" name="name" class="form-control" placeholder="Enter your full name *" required="required" data-error="Fullname is required.">
+                                            <input id="form_name" type="text" name="Name" class="form-control" placeholder="Enter your full name *" required="required" data-error="Fullname is required.">
                                             <div class="help-block with-errors"></div>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <input id="form_email" type="email" name="email" class="form-control" placeholder="Enter your email *" required="required" data-error="Valid email is required.">
+                                            <input id="form_email" type="email" name="Email" class="form-control" placeholder="Enter your email *" required="required" data-error="Valid email is required.">
                                             <div class="help-block with-errors"></div>
                                         </div>
                                     </div>
@@ -490,13 +514,13 @@
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <input id="form_phone" type="text" name="phone" class="form-control" placeholder="Enter your phone number *" required="required" data-error="Phone number is required.">
+                                            <input id="form_phone" type="text" name="Phone" class="form-control" placeholder="Enter your phone number *" required="required" data-error="Phone number is required.">
                                             <div class="help-block with-errors"></div>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <input id="form_subject" type="text" name="subject" class="form-control" placeholder="Enter subject *" required="required" data-error="Subject is required.">
+                                            <input id="form_subject" type="text" name="Subject" class="form-control" placeholder="Enter subject *" required="required" data-error="Subject is required.">
                                             <div class="help-block with-errors"></div>
                                         </div>
                                     </div>
@@ -504,18 +528,18 @@
                                 <div class="row">
                                     <div class="col-md-12">
                                         <div class="form-group">
-                                            <textarea id="form_message" name="message" class="form-control" placeholder="Your Message *" rows="4" required="required" data-error="Leave a message for me"></textarea>
+                                            <textarea id="form_message" name="Message" class="form-control" placeholder="Your Message *" rows="4" required="required" data-error="Leave a message for me"></textarea>
                                             <div class="help-block with-errors"></div>
                                         </div>
                                     </div>
                                     <div class="col-md-12">
-                                        <button class="btn btn-send" type="submit">Send message</button>
+                                        <button class="btn btn-send" id="submit_button" type="submit" name="submit" value="Send">Send message</button>
                                     </div>
                                 </div>
                             </div>
 
                         </form>
-
+                        -->
                     </div>
 
                 </div>
@@ -571,8 +595,20 @@
       <!--Footer Area Ends-->
 
   
+        <script>
+           
+           $(document).ready(function() {
+                $('#sumbit').click(function() {
+                    $('#contactform').attr('action',
+                                'mailto:nihad.biber90@gmail.com?subject=Singup for a job' +
+                                $('#name').val() + '&body=' + $('#email').val() + '&body=' + $('#comments').val() + '&body=');
+                    $('#contactform').submit();
+                });
+            });
+            
+        </script>
         <!--Latest version JQuery-->
-        <script src="js/jquery-3.2.1.min.js"></script>
+        <script src="js/jquery-3.4.1.min.js"></script>
         <!--Bootstrap js-->
         <script src="js/bootstrap.min.js"></script>
         <!--Magnific popup js-->
