@@ -684,7 +684,9 @@ p.heading-text {
     font-weight: bold;
     background-color: #333333;
     color: #ffffff;
-    padding: 5px;
+    padding: 10px;
+    font-size: 18px;
+    margin: 0;
 }
 
 .portfolio-area ul.list-inline li:first-child{
@@ -694,9 +696,9 @@ p.heading-text {
 }
 
 .portfolio-area ul.list-inline li:last-child{
-    -webkit-border-radius:0 5px 5px 0;
-    -moz-border-radius:0 5px 5px 0;
-    border-radius:0 5px 5px 0;
+    -webkit-border-radius:5px 5px 5px 5px;
+    -moz-border-radius:5px 5px 5px 5px;
+    border-radius:5px 5px 5px 5px;
 }
 
 /*--------------Portfolio area Ends-----------*/
@@ -797,7 +799,7 @@ p.heading-text {
 /*-------------10. Contact area starts -------------*/
 
 .contact-area{
-    background-color: #ffffff;
+    background-color: #eeeeee;
 }
 
 .contact-area .form-control{
@@ -823,6 +825,18 @@ p.heading-text {
     padding: 15px 20px;
     text-transform: uppercase;
     font-weight: 600;
+}
+
+.contact-info {
+    font-size: 25px;
+    color: #3498db;
+
+}
+
+@media (min-width: 320px) and (max-width: 425px) {
+    .contact-info {
+        font-size: 20px;
+    }
 }
 
 /*------------- Contact area ends -------------*/

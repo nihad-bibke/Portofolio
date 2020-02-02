@@ -11,8 +11,8 @@
   text-align: center;
   -webkit-tap-highlight-color: transparent; }
   .owl-theme .owl-nav [class*='owl-'] {
-    color: #FFF;
-    font-size: 14px;
+    color:#3498db;
+    font-size: 18px;
     margin: 5px;
     padding: 4px 7px;
     background: #D6D6D6;
@@ -20,7 +20,7 @@
     cursor: pointer;
     border-radius: 3px; }
     .owl-theme .owl-nav [class*='owl-']:hover {
-      background: #869791;
+      background: #3498db;
       color: #FFF;
       text-decoration: none; }
   .owl-theme .owl-nav .disabled {
@@ -48,3 +48,14 @@
       border-radius: 30px; }
     .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
       background: #869791; }
+
+
+      .owl-carousel {
+        -ms-touch-action: pan-y;
+        touch-action: pan-y;
+        }
+        or
+        .owl-carousel {
+        -ms-touch-action: none;
+        touch-action: none;
+        }
