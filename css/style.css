@@ -543,7 +543,7 @@ p.heading-text {
 /*---------------7. Services area Starts--------------*/
 
 .services-area {
-    background-color: #eeeeee;
+    background-color: #ffffff;
 }
 
 .services-icon i {
@@ -802,7 +802,7 @@ p.heading-text {
 /*-------------10. Contact area starts -------------*/
 
 .contact-area{
-    background-color: #eeeeee;
+    background-color: #ffffff;
 }
 
 .contact-area .form-control{
@@ -860,8 +860,13 @@ p.heading-text {
 
 /*skils*/
 
+.technologies-area {
+    background-color: #eeeeee;
+}
 
-
+.portfolio-area {
+    background-color: #eeeeee;
+}
 
 
 
